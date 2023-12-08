@@ -1,2 +1,5 @@
-# template
-modelo de projeto
+ALOCADOS POR MATÉRIA:
+
+EXPLORATÓRIA:
+
+Felipe Adriano e Felipe Baptista
