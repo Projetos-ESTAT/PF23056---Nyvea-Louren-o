@@ -40,6 +40,12 @@ ggplot(Dados_Paraíba_Longos) +
   theme_estat()
 ggsave("grafico_paraiba.pdf", width = 158, height = 93, units = "mm")
 
+##Análise de proporção Paraíba
+soma_icms_st_paraiba <- sum(Dados_Paraíba$`ICMS-ST`)
+soma_icms_paraiba <- sum(Dados_Paraíba$ICMS)
+
+proporção_icms_paraiba <- soma_icms_st_paraiba / soma_icms_paraiba
+proporção_icms_paraiba
 
 ##Gráfico do DF:
 Dados_DF$`ICMS-ST` <- Dados_DF$`ICMS-ST` / 1e6
@@ -57,3 +63,10 @@ ggplot(Dados_DF_Longos) +
   labs(x = "Ano", y = "Valor (em milhões)") +
   theme_estat()
 ggsave("grafico_df.pdf", width = 158, height = 93, units = "mm")
+
+##Análise de proporção DF:
+soma_icms_st_df <- sum(Dados_DF$`ICMS-ST`)
+soma_icms_df <- sum(Dados_DF$ICMS)
+
+proporção_icms_df <- soma_icms_st_df / soma_icms_df
+proporção_icms_df
